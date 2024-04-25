@@ -4,18 +4,43 @@ import "react-tooltip/dist/react-tooltip.css";
 import { AuthContext } from "../providers/AuthProvider";
 import demoUserPic from "../assets/demoUser.png";
 import { Tooltip } from "react-tooltip";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
-  const { user } = useContext(AuthContext);
+  const { user,logOut } = useContext(AuthContext);
+
+
+  const handleSignOut = () =>{
+  
+    logOut()
+    .then(result =>{
+      console.log(result);
+       toast.success('Logout Completed');
+    })
+    .catch(error =>{
+      console.log(error);
+        toast.warn("Error");
+    })
+
+  }
 
   const links = (
     <>
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
+      {
+        !user && (
+          <>
+          <li>
+        <NavLink to="/login">Login</NavLink>
+      </li>
       <li>
         <NavLink to="/register">Register</NavLink>
       </li>
+          </>
+        ) 
+      }
     </>
   );
 
@@ -75,7 +100,7 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Logout</a>
+              <button onClick={handleSignOut}>Logout</button>
             </li>
           </ul>
         </div>
