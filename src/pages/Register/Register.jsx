@@ -5,6 +5,7 @@ import { IoMdEye } from "react-icons/io";
 import { AuthContext } from "../../providers/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 
 const Register = () => {
@@ -19,7 +20,7 @@ const Register = () => {
       } = useForm()
     
       const onSubmit = (data) => {
-        console.log(data)
+        // console.log(data)
 
         if(data.password.length < 6){
             toast.warn("Password should be at least 6 characters or longer");
@@ -59,10 +60,10 @@ const Register = () => {
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
       <h1 className="text-5xl font-bold">Register Now</h1>
-      <p className="py-6">Provident cupiditate voluptatem et in.</p>
+      
     </div>
-    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-      <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
+    <div className="card rounded-none shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+      <form className="card-body pb-0" onSubmit={handleSubmit(onSubmit)}>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Name</span>
@@ -98,7 +99,7 @@ const Register = () => {
           <input type={showPassword ? 'text' :"password" } placeholder="password" className="w-full input input-bordered" 
           {...register("password", { required: true })}
           />
-          <span className="absolute top-3 right-2"  onClick={() => setShowPassword(!showPassword)}>
+          <span className="absolute top-4 right-2"  onClick={() => setShowPassword(!showPassword)}>
                     {
                         showPassword ?  <FaEyeSlash></FaEyeSlash>  : <IoMdEye></IoMdEye> 
                     }
@@ -110,6 +111,9 @@ const Register = () => {
           <button className="btn btn-primary">Register</button>
         </div>
       </form>
+      <div className="text-center py-5">
+     <p>Already have an account ? <Link className="text-blue-600 font-bold" to='/login'>Login</Link></p>
+     </div>
     </div>
   </div>
 </div>
