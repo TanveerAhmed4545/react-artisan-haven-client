@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa";
 import { IoMdEye } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { toast } from "react-toastify";
 
@@ -10,6 +10,13 @@ import { toast } from "react-toastify";
 const Login = () => {
     const [showPassword,setShowPassword] = useState(false);
     const {signIn,googleLogin,githubLogin} = useContext(AuthContext);
+
+
+    const location = useLocation();
+    // console.log("loaction in the login page", location);
+    const navigate = useNavigate();
+
+
     const {
         register,
         handleSubmit,
@@ -24,6 +31,8 @@ const Login = () => {
           // console.log(result.user);
           result.user &&  toast.success("Login Successfully");
           
+          // navigate after login
+          navigate(location?.state ? location.state : '/');
          
 
         })
@@ -39,7 +48,8 @@ const Login = () => {
       .then(result =>{
         // console.log(result.user);
         result.user &&  toast.success("Login Successfully");
-        
+        // social login navigate
+        navigate(location?.state ? location.state : '/');
       })
       .then(error =>{
         // console.log(error);

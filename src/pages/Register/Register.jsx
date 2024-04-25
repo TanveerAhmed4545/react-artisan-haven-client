@@ -5,13 +5,15 @@ import { IoMdEye } from "react-icons/io";
 import { AuthContext } from "../../providers/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Register = () => {
 
+    // show password
     const [showPassword,setShowPassword] = useState(false);
     const {createUser,setReload} = useContext(AuthContext);
+    const navigate = useNavigate();
     const {
         register,
         handleSubmit,
@@ -47,6 +49,8 @@ const Register = () => {
               .catch((error)=>{
                   console.log(error);
               })
+
+              navigate('/');
   
            })
            .catch(error=>{

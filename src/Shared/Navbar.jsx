@@ -29,6 +29,15 @@ const Navbar = () => {
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
+      <li>
+        <NavLink to="/allArtItems">All Art & craft Items</NavLink>
+      </li>
+      <li>
+        <NavLink to="/addCraftItem">Add Craft Item</NavLink>
+      </li>
+      <li>
+        <NavLink to="/myArtList">My Art&Craft List</NavLink>
+      </li>
       {
         !user && (
           <>
