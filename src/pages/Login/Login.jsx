@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
-import { FaEyeSlash } from "react-icons/fa";
+import { FaEyeSlash, FaGoogle } from "react-icons/fa";
 import { IoMdEye } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 
 const Login = () => {
     const [showPassword,setShowPassword] = useState(false);
-    const {signIn} = useContext(AuthContext);
+    const {signIn,googleLogin} = useContext(AuthContext);
     const {
         register,
         handleSubmit,
@@ -31,6 +31,20 @@ const Login = () => {
           // console.log(error);
           error && toast.warn("Login Error, email or password incorrect");
         })
+
+    }
+
+    const handleSocialLogin = socialProvider =>{
+      socialProvider()
+      .then(result =>{
+        // console.log(result.user);
+        result.user &&  toast.success("Login Successfully");
+        
+      })
+      .then(error =>{
+        // console.log(error);
+        error && toast.warn("Login Error");
+      })
     }
 
     return (
@@ -73,6 +87,12 @@ const Login = () => {
           <button className="btn btn-primary">Login</button>
         </div>
       </form>
+      <div className="px-8 pt-6">
+     <button onClick={() => handleSocialLogin(googleLogin)} className="btn bg-blue-600 border-none text-white w-full">
+        <FaGoogle></FaGoogle>
+          Google
+        </button>
+     </div>
       <div className="text-center py-5">
      <p>Do not have an account ? <Link className="text-blue-600 font-bold" to='/register'>Register</Link></p>
      </div>
