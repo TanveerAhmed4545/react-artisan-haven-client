@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
-import { FaEyeSlash, FaGoogle } from "react-icons/fa";
+import { FaEyeSlash, FaGithub, FaGoogle } from "react-icons/fa";
 import { IoMdEye } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 
 const Login = () => {
     const [showPassword,setShowPassword] = useState(false);
-    const {signIn,googleLogin} = useContext(AuthContext);
+    const {signIn,googleLogin,githubLogin} = useContext(AuthContext);
     const {
         register,
         handleSubmit,
@@ -91,6 +91,12 @@ const Login = () => {
      <button onClick={() => handleSocialLogin(googleLogin)} className="btn bg-blue-600 border-none text-white w-full">
         <FaGoogle></FaGoogle>
           Google
+        </button>
+     </div>
+     <div className="px-8 pt-6">
+     <button onClick={() => handleSocialLogin(githubLogin)} className="btn bg-black border-none text-white w-full">
+        <FaGithub></FaGithub>
+          Github
         </button>
      </div>
       <div className="text-center py-5">

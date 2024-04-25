@@ -9,9 +9,11 @@ import {
 } from "firebase/auth";
 import app from "../firebase/firebase.config";
 import { GoogleAuthProvider } from "firebase/auth";
+import { GithubAuthProvider } from "firebase/auth";
 
 // social provider
 const googleProvider = new GoogleAuthProvider();
+const githubProvider = new GithubAuthProvider();
 
 export const AuthContext = createContext(null);
 const auth = getAuth(app);
@@ -41,6 +43,12 @@ const AuthProvider = ({ children }) => {
     return signInWithPopup(auth, googleProvider);
   };
 
+  // githubLogin
+  const githubLogin = () => {
+    setLoading(true);
+    return signInWithPopup(auth, githubProvider);
+  };
+
   // logOut
   const logOut = () => {
     setLoading(true);
@@ -66,6 +74,7 @@ const AuthProvider = ({ children }) => {
     signIn,
     logOut,
     googleLogin,
+    githubLogin
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
