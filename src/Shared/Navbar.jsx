@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import 'react-tooltip/dist/react-tooltip.css'
-
+import { AuthContext } from "../providers/AuthProvider";
+import demoUserPic from '../assets/demoUser.png';
 
 const Navbar = () => {
+  const {user} = useContext(AuthContext);
 
     const links = <>
          <li><NavLink to='/'>Home</NavLink></li>
@@ -32,8 +35,24 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
+    
+  <div>
+  <div className="dropdown dropdown-end">
+      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+        <div className="w-10 rounded-full">
+          <img  src={user?.photoURL ? user.photoURL : demoUserPic} />
+        </div>
+      </div>
+      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        
+        <li><a>Logout</a></li>
+      </ul>
+    </div>
+  </div>
   
-  <a  className="btn">Login</a>
+
+ 
+
   </div>
 </div>
     );
