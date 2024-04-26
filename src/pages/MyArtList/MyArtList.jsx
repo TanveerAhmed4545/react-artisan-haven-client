@@ -6,6 +6,8 @@ import MyCard from "./MyCard";
 const MyArtList = () => {
     const {user} = useContext(AuthContext);
     const [myData,setMyData] = useState([]);
+    // const [myArt,setMyArt] = useState(myData);
+    // console.log(myArt);
 
     useEffect(()=>{
         fetch(`http://localhost:5000/craftItems/${user?.email}`)
@@ -22,7 +24,7 @@ const MyArtList = () => {
 
            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {
-                myData.map((myCard,idx) => <MyCard key={idx} myCard={myCard}></MyCard>)
+                myData.map((myCard,idx) => <MyCard key={idx} myCard={myCard} myData={myData} setMyData={setMyData}></MyCard>)
               }
            </div>
 

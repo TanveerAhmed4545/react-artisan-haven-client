@@ -40,10 +40,11 @@ const router = createBrowserRouter([
                 </PrivateRoute>
             },
             {
-                path: '/myCardUpdate',
+                path: '/myCardUpdate/:id',
                 element: <PrivateRoute>
                     <MyCardUpdate></MyCardUpdate>
-                </PrivateRoute>
+                </PrivateRoute>,
+                loader: ({params})=>fetch(`http://localhost:5000/craftItem/${params.id}`)
             },
             {
                 path: '/myArtList',

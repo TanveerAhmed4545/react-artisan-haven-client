@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 // eslint-disable-next-line react/prop-types
-const MyCard = ({ myCard }) => {
+const MyCard = ({ myCard ,setMyData,myData }) => {
   // eslint-disable-next-line react/prop-types
   const {_id , item_name, image, price, rating, customization, stockStatus } =
     myCard;
@@ -11,7 +11,7 @@ const MyCard = ({ myCard }) => {
     
 
     const handleDelete = id =>{
-         console.log(id);
+        //  console.log(id);
 
 
 
@@ -37,13 +37,16 @@ const MyCard = ({ myCard }) => {
             })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 if(data.deletedCount > 0){
                      Swal.fire({
                 title: "Deleted!",
                 text: "Your Art has been deleted.",
                 icon: "success"
               }); 
+              // eslint-disable-next-line react/prop-types
+              const remaining = myData.filter(art => art._id !== _id);
+              setMyData(remaining);
                 }
             })
 
@@ -72,7 +75,7 @@ const MyCard = ({ myCard }) => {
           <span>Stock Status :</span> {stockStatus}
         </p>
         <div className="card-actions ">
-          <Link><button className="btn btn-primary">Update</button></Link>
+          <Link to={`/myCardUpdate/${_id}`}><button className="btn btn-primary">Update</button></Link>
           <button 
           onClick={()=> handleDelete(_id)}
           className="btn btn-primary">Delete</button>
