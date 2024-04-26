@@ -8,6 +8,7 @@ import AddCraftItem from "../pages/AddCraftItem/AddCraftItem";
 import MyArtList from "../pages/MyArtList/MyArtList";
 import PrivateRoute from "./PrivateRoute";
 import ViewDetails from "../pages/ViewDetails/ViewDetails";
+import MyCardUpdate from "../pages/MyArtList/MyCardUpdate";
 
 
 
@@ -36,6 +37,12 @@ const router = createBrowserRouter([
                 path: '/addCraftItem',
                 element: <PrivateRoute>
                     <AddCraftItem></AddCraftItem>
+                </PrivateRoute>
+            },
+            {
+                path: '/myCardUpdate',
+                element: <PrivateRoute>
+                    <MyCardUpdate></MyCardUpdate>
                 </PrivateRoute>
             },
             {

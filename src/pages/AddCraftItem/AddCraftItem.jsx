@@ -45,6 +45,8 @@ const AddCraftItem = () => {
                     icon: 'success',
                     confirmButtonText: 'Done'
                   })
+                  // Reset the form after successful submission
+                form.reset();
             }else{
                 Swal.fire({
                     title: 'Error!',
