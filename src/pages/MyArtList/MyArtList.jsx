@@ -1,6 +1,7 @@
 
 
 const MyArtList = () => {
+    
     return (
         <div>
             <h2>MyArtList</h2>

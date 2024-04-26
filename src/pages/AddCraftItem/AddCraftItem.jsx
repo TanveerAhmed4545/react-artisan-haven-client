@@ -69,7 +69,7 @@ const AddCraftItem = () => {
                             <span className="label-text">Item Name</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="item_name" placeholder="Item Name" className="input input-bordered w-full"/>
+                            <input type="text" name="item_name" placeholder="Item Name" className="input input-bordered w-full" required/>
                         </label>
 
                     </div>
@@ -78,7 +78,7 @@ const AddCraftItem = () => {
                             <span className="label-text">Subcategory Name</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="subcategory_Name" placeholder="Subcategory Name" className="input input-bordered w-full"/>
+                            <input type="text" name="subcategory_Name" placeholder="Subcategory Name" className="input input-bordered w-full" required/>
                         </label>
 
                     </div>
@@ -92,7 +92,7 @@ const AddCraftItem = () => {
                             <span className="label-text">Short description</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="short_description" placeholder="Short description" className="input input-bordered w-full"/>
+                            <input type="text" name="short_description" placeholder="Short description" className="input input-bordered w-full" required/>
                         </label>
 
                     </div>
@@ -101,7 +101,7 @@ const AddCraftItem = () => {
                             <span className="label-text">Price</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="price" placeholder="Price" className="input input-bordered w-full"/>
+                            <input type="text" name="price" placeholder="Price" className="input input-bordered w-full" required/>
                         </label>
 
                     </div>
@@ -115,7 +115,7 @@ const AddCraftItem = () => {
                             <span className="label-text">Rating</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full"/>
+                            <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full" required/>
                         </label>
 
                     </div>
@@ -124,7 +124,7 @@ const AddCraftItem = () => {
                             <span className="label-text">Customization</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="customization" placeholder="Customization" className="input input-bordered w-full"/>
+                            <input type="text" name="customization" placeholder="Customization" className="input input-bordered w-full" required/>
                         </label>
 
                     </div>
@@ -138,7 +138,7 @@ const AddCraftItem = () => {
                             <span className="label-text">Processing Time</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="processing_time" placeholder="Processing Time" className="input input-bordered w-full"/>
+                            <input type="text" name="processing_time" placeholder="Processing Time" className="input input-bordered w-full" required/>
                         </label>
 
                     </div>
@@ -147,7 +147,7 @@ const AddCraftItem = () => {
                             <span className="label-text">Stock Status</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="stockStatus" placeholder="Stock Status" className="input input-bordered w-full"/>
+                            <input type="text" name="stockStatus" placeholder="Stock Status" className="input input-bordered w-full" required/>
                         </label>
 
                     </div>
@@ -159,7 +159,7 @@ const AddCraftItem = () => {
                             <span className="label-text">Image Url</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="image" placeholder="Image Url" className="input input-bordered w-full"/>
+                            <input type="text" name="image" placeholder="Image Url" className="input input-bordered w-full" required/>
                         </label>
 
                     </div>
