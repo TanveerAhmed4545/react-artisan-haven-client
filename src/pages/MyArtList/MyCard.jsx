@@ -75,10 +75,10 @@ const MyCard = ({ myCard ,setMyData,myData }) => {
           <span>Stock Status :</span> {stockStatus}
         </p>
         <div className="card-actions ">
-          <Link to={`/myCardUpdate/${_id}`}><button className="btn bg-[#59E5A8]">Update</button></Link>
+          <Link to={`/myCardUpdate/${_id}`}><button className="btn border-none text-white bg-[#59E5A8]">Update</button></Link>
           <button 
           onClick={()=> handleDelete(_id)}
-          className="btn bg-[#59E5A8]">Delete</button>
+          className="btn border-none text-white bg-[#59E5A8]">Delete</button>
         </div>
       </div>
     </div>

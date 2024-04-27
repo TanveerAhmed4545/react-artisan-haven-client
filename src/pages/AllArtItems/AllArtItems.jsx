@@ -23,13 +23,13 @@ const AllArtItems = () => {
     <tbody>
       {/* row 1 */}
       {
-        allArts.map((art,idx)=> <tr key={art._id}>
+        allArts.map((art,idx)=> <tr  key={art._id}>
         <th>{idx+1}</th>
         <td>{art.item_name}</td>
         <td>{art.subcategory_Name}</td>
         <td>{art.price}</td>
         <th>
-            <Link to={`/viewDetails/${art._id}`}><button className="btn bg-[#59E5A8]">View Details</button></Link>
+            <Link to={`/viewDetails/${art._id}`}><button  className="btn text-white border-none bg-[#59E5A8]">View Details</button></Link>
         </th>
       </tr>)
       }
