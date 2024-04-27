@@ -56,7 +56,7 @@ const MyCard = ({ myCard ,setMyData,myData }) => {
 
     }
   return (
-    <div className="card card-compact  bg-base-100 shadow-xl">
+    <div className="card card-compact  bg-[#E3F9ED] hover:shadow-xl hover:shadow-[#59E5A8]">
       <figure>
         <img className="max-h-80 w-full" src={image} />
       </figure>

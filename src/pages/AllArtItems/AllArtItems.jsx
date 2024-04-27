@@ -5,7 +5,7 @@ const AllArtItems = () => {
     const allArts = useLoaderData();
     return (
         <div className="bg-[#E3F9ED]">
-            <h2 className="text-center text-3xl font-semibold py-9">All Art Items</h2>
+            <h2 className="text-center text-2xl md:text-5xl font-bold text-[#59E5A8] py-9">All Art Items</h2>
 
             <div>
             <div className="overflow-x-auto">

@@ -62,7 +62,7 @@ const AddCraftItem = () => {
 
     return (
         <div className="bg-[#E3F9ED] p-7 md:p-20">
-            <h2 className="text-center text-3xl font-semibold">Add Art Item</h2>
+            <h2 className="text-center text-2xl md:text-5xl font-bold text-[#59E5A8]">Add Art Item</h2>
             <form onSubmit={handleArtItem}>
                 {/* item and subcategory name */}
                 <div className="md:flex gap-5 mb-5 md:my-8">
