@@ -103,7 +103,7 @@ const AddCraftItem = () => {
                             <span className="label-text font-semibold">Price</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="price" placeholder="Price" className="input input-bordered w-full" required/>
+                            <input type="number" name="price" placeholder="Price" className="input input-bordered w-full" required/>
                         </label>
 
                     </div>
@@ -117,7 +117,7 @@ const AddCraftItem = () => {
                             <span className="label-text font-semibold">Rating</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full" required/>
+                            <input type="number" name="rating" placeholder="Rating" className="input input-bordered w-full" required/>
                         </label>
 
                     </div>

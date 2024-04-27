@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { BsCurrencyDollar } from "react-icons/bs";
 
 
 const ViewDetails = () => {
@@ -17,7 +18,7 @@ const ViewDetails = () => {
   <div className="p-5 lg:p-10 space-y-5 ">
     <h2 className="font-bold text-xl md:text-2xl lg:text-4xl text-[#59E5A8]">{item_name}</h2>
     <p className="text-xl"><span className="font-semibold ">Subcategory Name : </span> <span className="text-blue-gray-600">{subcategory_Name}</span></p>
-    <p className="text-xl"><span className="font-semibold ">Price :</span> <span className="text-blue-gray-600">{price}</span></p>
+    <p className="text-xl flex items-center"><span className="font-semibold ">Price :</span> <span className="text-blue-gray-600 flex items-center"> {price} <BsCurrencyDollar className="text-[#59E5A8]"/></span> </p>
     <p className="text-xl"><span className="font-semibold ">Stock Status :</span> <span className="text-blue-gray-600">{stockStatus}</span></p>
     
     <p className="text-xl"><span className="font-semibold ">Short Description : </span>  <span className="text-blue-gray-600">{short_description}</span></p>

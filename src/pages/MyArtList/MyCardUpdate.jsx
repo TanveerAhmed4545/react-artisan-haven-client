@@ -105,7 +105,7 @@ const MyCardUpdate = () => {
                         <span className="label-text">Price</span>
                     </label>
                     <label className="input-group">
-                        <input type="text" name="price" defaultValue={price} placeholder="Price" className="input input-bordered w-full" required/>
+                        <input type="number" name="price" defaultValue={price} placeholder="Price" className="input input-bordered w-full" required/>
                     </label>
 
                 </div>
@@ -119,7 +119,7 @@ const MyCardUpdate = () => {
                         <span className="label-text">Rating</span>
                     </label>
                     <label className="input-group">
-                        <input type="text" name="rating" defaultValue={rating} placeholder="Rating" className="input input-bordered w-full" required/>
+                        <input type="number" name="rating" defaultValue={rating} placeholder="Rating" className="input input-bordered w-full" required/>
                     </label>
 
                 </div>
