@@ -63,7 +63,7 @@ const MyCardUpdate = () => {
 
 
     return (
-        <div className="bg-slate-500 p-7 md:p-20">
+        <div className="bg-[#E3F9ED] p-7 md:p-20">
         <h2 className="text-center text-3xl font-semibold">Update Art Item</h2>
         <form onSubmit={handleUpdateItem}>
             {/* item and subcategory name */}
@@ -170,7 +170,7 @@ const MyCardUpdate = () => {
                 
             </div>
               
-            <input type="submit" className="btn btn-block bg-slate-800 text-white border-none" value='Update Art'/>
+            <input type="submit" className="btn btn-block bg-[#59E5A8] text-white border-none" value='Update Art'/>
 
 
         </form>

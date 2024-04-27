@@ -26,27 +26,55 @@ const Navbar = () => {
 
   const links = (
     <>
-      <li>
-        <NavLink to="/">Home</NavLink>
-      </li>
-      <li>
-        <NavLink to="/allArtItems">All Art & craft Items</NavLink>
-      </li>
-      <li>
-        <NavLink to="/addCraftItem">Add Craft Item</NavLink>
-      </li>
-      <li>
-        <NavLink to="/myArtList">My Art&Craft List</NavLink>
-      </li>
+    <li><NavLink  to='/'  className={({ isActive, isPending }) =>
+         isActive
+           ? "bg-none border bg-[#59E5A8]  font-semibold border-[#98EDC4] mr-3"
+           : isPending
+           ? "pending"
+           : "mr-3 font-semibold"
+       }>Home</NavLink></li>
+       <li><NavLink  to="/allArtItems"  className={({ isActive, isPending }) =>
+         isActive
+           ? "bg-none border bg-[#59E5A8]  font-semibold border-[#98EDC4] mr-3"
+           : isPending
+           ? "pending"
+           : "mr-3 font-semibold"
+       }>All Art & craft Items</NavLink></li>
+
+<li><NavLink  to="/addCraftItem"  className={({ isActive, isPending }) =>
+         isActive
+           ? "bg-none border bg-[#59E5A8]  font-semibold border-[#98EDC4] mr-3"
+           : isPending
+           ? "pending"
+           : "mr-3 font-semibold"
+       }>Add Craft Item</NavLink></li>
+
+<li><NavLink  to="/myArtList"  className={({ isActive, isPending }) =>
+         isActive
+           ? "bg-none border bg-[#59E5A8]  font-semibold border-[#98EDC4] mr-3"
+           : isPending
+           ? "pending"
+           : "mr-3 font-semibold"
+       }>My Art&Craft List</NavLink></li>
+      
       {
         !user && (
           <>
-          <li>
-        <NavLink to="/login">Login</NavLink>
-      </li>
-      <li>
-        <NavLink to="/register">Register</NavLink>
-      </li>
+          <li><NavLink  to="/login"  className={({ isActive, isPending }) =>
+         isActive
+           ? "bg-none border bg-[#59E5A8]  font-semibold border-[#98EDC4] mr-3"
+           : isPending
+           ? "pending"
+           : "mr-3 font-semibold"
+       }>Login</NavLink></li>
+          <li><NavLink  to="/register"  className={({ isActive, isPending }) =>
+         isActive
+           ? "bg-none border bg-[#59E5A8]  font-semibold border-[#98EDC4] mr-3"
+           : isPending
+           ? "pending"
+           : "mr-3 font-semibold"
+       }>Register</NavLink></li>
+      
           </>
         ) 
       }
@@ -80,7 +108,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Artisan Haven</a>
+        <a className=" text-xl">Artisan Haven</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
@@ -109,7 +137,7 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <button onClick={handleSignOut}>Logout</button>
+              <button className="btn bg-[#59E5A8]" onClick={handleSignOut}>Logout</button>
             </li>
           </ul>
         </div>

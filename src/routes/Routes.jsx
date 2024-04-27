@@ -9,6 +9,7 @@ import MyArtList from "../pages/MyArtList/MyArtList";
 import PrivateRoute from "./PrivateRoute";
 import ViewDetails from "../pages/ViewDetails/ViewDetails";
 import MyCardUpdate from "../pages/MyArtList/MyCardUpdate";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 
 
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <ErrorPage></ErrorPage>,
         children:[
             {
                 path: '/',

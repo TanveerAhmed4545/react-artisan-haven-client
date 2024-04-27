@@ -19,8 +19,8 @@ const MyArtList = () => {
     },[user])
 
     return (
-        <div className="mx-5 md:mx-10">
-            <h2 className="text-center font-semibold text-3xl my-10">MyArtList</h2>
+        <div className="mx-5 md:mx-10 my-5 md:my-10">
+            <h2 className="text-center font-bold text-3xl mb-10">My Art List</h2>
 
            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {

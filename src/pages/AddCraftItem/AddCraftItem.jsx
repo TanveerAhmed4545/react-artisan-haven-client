@@ -61,14 +61,14 @@ const AddCraftItem = () => {
     }
 
     return (
-        <div className="bg-slate-500 p-7 md:p-20">
+        <div className="bg-[#E3F9ED] p-7 md:p-20">
             <h2 className="text-center text-3xl font-semibold">Add Art Item</h2>
             <form onSubmit={handleArtItem}>
                 {/* item and subcategory name */}
                 <div className="md:flex gap-5 mb-5 md:my-8">
                 <div className="form-control w-full md:w-1/2">
                         <label className="label">
-                            <span className="label-text">Item Name</span>
+                            <span className="label-text font-semibold">Item Name</span>
                         </label>
                         <label className="input-group">
                             <input type="text" name="item_name" placeholder="Item Name" className="input input-bordered w-full" required/>
@@ -77,7 +77,7 @@ const AddCraftItem = () => {
                     </div>
                     <div className="form-control w-full md:w-1/2">
                         <label className="label">
-                            <span className="label-text">Subcategory Name</span>
+                            <span className="label-text font-semibold">Subcategory Name</span>
                         </label>
                         <label className="input-group">
                             <input type="text" name="subcategory_Name" placeholder="Subcategory Name" className="input input-bordered w-full" required/>
@@ -91,7 +91,7 @@ const AddCraftItem = () => {
                 <div className="md:flex gap-5 mb-5 md:mb-8">
                 <div className="form-control w-full md:w-1/2">
                         <label className="label">
-                            <span className="label-text">Short description</span>
+                            <span className="label-text font-semibold">Short description</span>
                         </label>
                         <label className="input-group">
                             <input type="text" name="short_description" placeholder="Short description" className="input input-bordered w-full" required/>
@@ -100,7 +100,7 @@ const AddCraftItem = () => {
                     </div>
                     <div className="form-control w-full md:w-1/2">
                         <label className="label">
-                            <span className="label-text">Price</span>
+                            <span className="label-text font-semibold">Price</span>
                         </label>
                         <label className="input-group">
                             <input type="text" name="price" placeholder="Price" className="input input-bordered w-full" required/>
@@ -114,7 +114,7 @@ const AddCraftItem = () => {
                  <div className="md:flex gap-5 mb-5 md:mb-8">
                 <div className="form-control w-full md:w-1/2">
                         <label className="label">
-                            <span className="label-text">Rating</span>
+                            <span className="label-text font-semibold">Rating</span>
                         </label>
                         <label className="input-group">
                             <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full" required/>
@@ -123,7 +123,7 @@ const AddCraftItem = () => {
                     </div>
                     <div className="form-control w-full md:w-1/2">
                         <label className="label">
-                            <span className="label-text">Customization</span>
+                            <span className="label-text font-semibold">Customization</span>
                         </label>
                         <label className="input-group">
                             <input type="text" name="customization" placeholder="Customization" className="input input-bordered w-full" required/>
@@ -137,7 +137,7 @@ const AddCraftItem = () => {
                 <div className="md:flex gap-5 mb-5 md:mb-8">
                 <div className="form-control w-full md:w-1/2">
                         <label className="label">
-                            <span className="label-text">Processing Time</span>
+                            <span className="label-text font-semibold">Processing Time</span>
                         </label>
                         <label className="input-group">
                             <input type="text" name="processing_time" placeholder="Processing Time" className="input input-bordered w-full" required/>
@@ -146,7 +146,7 @@ const AddCraftItem = () => {
                     </div>
                     <div className="form-control w-full md:w-1/2">
                         <label className="label">
-                            <span className="label-text">Stock Status</span>
+                            <span className="label-text font-semibold">Stock Status</span>
                         </label>
                         <label className="input-group">
                             <input type="text" name="stockStatus" placeholder="Stock Status" className="input input-bordered w-full" required/>
@@ -158,7 +158,7 @@ const AddCraftItem = () => {
                 <div className="mb-5 md:mb-10">
                     <div className="form-control w-full">
                         <label className="label">
-                            <span className="label-text">Image Url</span>
+                            <span className="label-text font-semibold">Image Url</span>
                         </label>
                         <label className="input-group">
                             <input type="text" name="image" placeholder="Image Url" className="input input-bordered w-full" required/>
@@ -168,7 +168,7 @@ const AddCraftItem = () => {
                     
                 </div>
                   
-                <input type="submit" className="btn btn-block bg-slate-800 text-white border-none" value='Add Art'/>
+                <input type="submit" className="btn btn-block bg-[#59E5A8] text-white border-none" value='Add Art'/>
 
 
             </form>

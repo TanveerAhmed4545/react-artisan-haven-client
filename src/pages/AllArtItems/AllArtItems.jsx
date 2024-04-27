@@ -4,8 +4,8 @@ import { Link, useLoaderData } from "react-router-dom";
 const AllArtItems = () => {
     const allArts = useLoaderData();
     return (
-        <div>
-            <h2 className="text-center text-3xl font-semibold py-9">AllArtItems : {allArts.length}</h2>
+        <div className="bg-[#E3F9ED]">
+            <h2 className="text-center text-3xl font-semibold py-9">All Art Items</h2>
 
             <div>
             <div className="overflow-x-auto">
@@ -29,7 +29,7 @@ const AllArtItems = () => {
         <td>{art.subcategory_Name}</td>
         <td>{art.price}</td>
         <th>
-            <Link to={`/viewDetails/${art._id}`}><button className="btn">View Details</button></Link>
+            <Link to={`/viewDetails/${art._id}`}><button className="btn bg-[#59E5A8]">View Details</button></Link>
         </th>
       </tr>)
       }
