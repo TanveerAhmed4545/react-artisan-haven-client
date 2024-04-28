@@ -89,9 +89,9 @@ const MyArtList = () => {
 
 
     return (
-        <div className="mx-5 md:mx-10 my-5 md:my-10">
+        <div className="mx-5 md:mx-10 mb-5 mt-5 md:mt-10 ">
             <h2 className="text-center text-2xl md:text-5xl text-[#59E5A8] font-bold  mb-5">My Art List</h2>
-            <div className="py-4 text-center">
+            <div className="pb-4 text-center">
             <details className="dropdown">
          <summary className="m-1 btn bg-[#59E5A8] text-white">Filter</summary>
         <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">

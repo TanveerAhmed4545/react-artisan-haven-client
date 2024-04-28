@@ -4,8 +4,8 @@ import { IoLogoTwitter } from "react-icons/io";
 
 const Footer = () => {
     return (
-        <div className="  bg-[#aaffd6] ">
-          <footer className="footer p-10 bg-[#aaffd6] text-base-content ">
+        <div className="  bg-green-200 ">
+          <footer className="footer p-10 bg-green-200 text-base-content ">
   <nav>
     <h6 className="footer-title">Services</h6> 
     <a className="link link-hover">Branding</a>
@@ -34,21 +34,21 @@ const Footer = () => {
       </label> 
       <div className="join">
         <input type="text" placeholder="username@site.com" className="input  join-item" /> 
-        <button className="btn bg-[#206c4b] border-none text-white join-item">Subscribe</button>
+        <button className="btn bg-green-800 border-none text-white join-item">Subscribe</button>
       </div>
     </fieldset>
   </div>
 </footer>
-<footer className="footer px-10 py-4 border-t bg-[#aaffd6] text-base-content border-base-300 ">
+<footer className="footer px-10 py-4 border-t bg-green-200 text-base-content border-base-300 ">
   <aside className="items-center grid-flow-col ">
     {/* <MdOutlineRealEstateAgent className="text-3xl text-[#1DB2FF]"></MdOutlineRealEstateAgent> */}
     <p  className="font-semibold">Artisan Haven Ltd. <br/>Providing reliable Arts since 2010</p>
   </aside> 
   <nav className="md:place-self-center md:justify-self-end">
     <div className="grid grid-flow-col gap-4">
-      <a><FaFacebook className="text-2xl text-[#0e5c3a]"></FaFacebook></a>
-      <a><IoLogoTwitter className="text-2xl text-[#0e5c3a]"></IoLogoTwitter></a>
-      <a><FaInstagram className="text-2xl text-[#0e5c3a]"></FaInstagram></a>
+      <a><FaFacebook className="text-2xl text-green-800"></FaFacebook></a>
+      <a><IoLogoTwitter className="text-2xl text-green-800"></IoLogoTwitter></a>
+      <a><FaInstagram className="text-2xl text-green-800"></FaInstagram></a>
     </div>
   </nav>
 </footer>

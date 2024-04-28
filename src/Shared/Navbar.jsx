@@ -100,7 +100,7 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
-        <div className="dropdown">
+        <div className="dropdown z-50">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +124,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className=" text-xl">Artisan Haven</a>
+        <a ><span className='font-semibold mr-1 text-xl lg:text-2xl text-[#59E5A8]'>Artisan</span> <span className='font-semibold text-lg lg:text-xl  text-[#59E5A8]'>Haven</span></a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
@@ -164,7 +164,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm z-50 dropdown-content mt-3  p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
               <button className="btn bg-[#59E5A8]" onClick={handleSignOut}>Logout</button>
