@@ -25,8 +25,8 @@ const MyCardUpdate = () => {
 
         const UpdateArtItem = {
             item_name,subcategory_Name,short_description,price,rating,customization,processing_time,stockStatus,image
-        }
-        console.log(UpdateArtItem);
+        };
+        // console.log(UpdateArtItem);
 
         // send data to the server
         fetch(`http://localhost:5000/craftItem/${_id}`,{
@@ -38,7 +38,7 @@ const MyCardUpdate = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             if(data.modifiedCount>0){
                 Swal.fire({
                     title: 'Success!',

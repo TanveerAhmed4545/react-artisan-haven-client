@@ -6,7 +6,7 @@ const ViewDetails = () => {
        const details = useLoaderData();
        const {id} = useParams();
        const detailsArt = details.find(d => d._id == id);
-       console.log(detailsArt);  
+      //  console.log(detailsArt);  
        const { item_name,subcategory_Name,short_description,price,rating,customization,processing_time,stockStatus,image} = detailsArt;
 
     return (

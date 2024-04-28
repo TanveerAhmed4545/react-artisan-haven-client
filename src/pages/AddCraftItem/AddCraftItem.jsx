@@ -25,7 +25,7 @@ const AddCraftItem = () => {
         const newArtItem = {
             item_name,subcategory_Name,short_description,price,rating,customization,processing_time,stockStatus,image,userEmail,userName
         }
-        console.log(newArtItem);
+        // console.log(newArtItem);
 
         // send data to the server
         fetch('http://localhost:5000/craftItems',{
@@ -37,7 +37,7 @@ const AddCraftItem = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             if(data.insertedId){
                 Swal.fire({
                     title: 'Success!',
