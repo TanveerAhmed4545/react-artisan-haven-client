@@ -60,13 +60,13 @@ const Register = () => {
     }
 
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen bg-[#E3F9ED]">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
       <h1 className="text-5xl font-bold">Register Now</h1>
       
     </div>
-    <div className="card rounded-none shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+    <div className="card rounded-tr-none rounded-bl-none shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <form className="card-body pb-0" onSubmit={handleSubmit(onSubmit)}>
         <div className="form-control">
           <label className="label">
@@ -112,11 +112,11 @@ const Register = () => {
           
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Register</button>
+          <button className="btn bg-[#59E5A8] text-white">Register</button>
         </div>
       </form>
       <div className="text-center py-5">
-     <p>Already have an account ? <Link className="text-blue-600 font-bold" to='/login'>Login</Link></p>
+     <p>Already have an account ? <Link className="text-[#59E5A8] font-bold" to='/login'>Login</Link></p>
      </div>
     </div>
   </div>

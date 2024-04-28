@@ -10,6 +10,7 @@ import PrivateRoute from "./PrivateRoute";
 import ViewDetails from "../pages/ViewDetails/ViewDetails";
 import MyCardUpdate from "../pages/MyArtList/MyCardUpdate";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import CategoriesCard from "../pages/CategoriesCard/CategoriesCard";
 
 
 
@@ -54,6 +55,11 @@ const router = createBrowserRouter([
                 element: <PrivateRoute>
                     <MyArtList></MyArtList>
                 </PrivateRoute>
+            },
+            {
+                path: '/categoriesCard/:id',
+                element: <CategoriesCard></CategoriesCard>,
+                loader: ()=> fetch('http://localhost:5000/craftItems')
             },
             {
                 path: '/login',
