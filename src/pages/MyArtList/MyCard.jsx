@@ -32,7 +32,7 @@ const MyCard = ({ myCard ,setMyData,myData }) => {
             //   });
             
 
-            fetch(`http://localhost:5000/craftItems/${id}`,{
+            fetch(`https://react-artisan-haven-server.vercel.app/craftItems/${id}`,{
                method: "DELETE"
             })
             .then(res => res.json())

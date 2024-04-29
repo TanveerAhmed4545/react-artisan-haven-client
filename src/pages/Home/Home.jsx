@@ -13,7 +13,7 @@ const Home = () => {
     const [category,setCategory] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/artItems')
+        fetch('https://react-artisan-haven-server.vercel.app/artItems')
           .then(res => res.json())
              .then(data => {
                 //  console.log(data);

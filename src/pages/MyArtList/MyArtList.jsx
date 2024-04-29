@@ -61,7 +61,7 @@ const MyArtList = () => {
     
 
     useEffect(() => {
-        fetch(`http://localhost:5000/craftItems/${user?.email}`)
+        fetch(`https://react-artisan-haven-server.vercel.app/craftItems/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 let filteredData = data;

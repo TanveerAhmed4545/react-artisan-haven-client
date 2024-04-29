@@ -23,19 +23,19 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: ()=> fetch('http://localhost:5000/craftItems')
+                loader: ()=> fetch('https://react-artisan-haven-server.vercel.app/craftItems')
             },
             {
                 path: '/allArtItems',
                 element: <AllArtItems></AllArtItems>,
-                loader: ()=> fetch('http://localhost:5000/craftItems')
+                loader: ()=> fetch('https://react-artisan-haven-server.vercel.app/craftItems')
             },
             {
                path: '/viewDetails/:id',
                element: <PrivateRoute>
                 <ViewDetails></ViewDetails>
                </PrivateRoute>,
-               loader: ()=> fetch('http://localhost:5000/craftItems')
+               loader: ()=> fetch('https://react-artisan-haven-server.vercel.app/craftItems')
             },
             {
                 path: '/addCraftItem',
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
                 element: <PrivateRoute>
                     <MyCardUpdate></MyCardUpdate>
                 </PrivateRoute>,
-                loader: ({params})=>fetch(`http://localhost:5000/craftItem/${params.id}`)
+                loader: ({params})=>fetch(`https://react-artisan-haven-server.vercel.app/craftItem/${params.id}`)
             },
             {
                 path: '/myArtList',
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
             {
                 path: '/categoriesCard/:id',
                 element: <CategoriesCard></CategoriesCard>,
-                loader: ()=> fetch('http://localhost:5000/craftItems')
+                loader: ()=> fetch('https://react-artisan-haven-server.vercel.app/craftItems')
             },
             {
                 path: '/login',

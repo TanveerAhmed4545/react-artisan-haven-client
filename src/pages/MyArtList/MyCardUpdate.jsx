@@ -29,7 +29,7 @@ const MyCardUpdate = () => {
         // console.log(UpdateArtItem);
 
         // send data to the server
-        fetch(`http://localhost:5000/craftItem/${_id}`,{
+        fetch(`https://react-artisan-haven-server.vercel.app/craftItem/${_id}`,{
               method: 'PUT',
               headers: {
                 'content-type':'application/json'
@@ -78,12 +78,35 @@ const MyCardUpdate = () => {
 
                 </div>
                 <div className="form-control w-full md:w-1/2">
-                    <label className="label">
+                    {/* <label className="label">
                         <span className="label-text">Subcategory Name</span>
                     </label>
                     <label className="input-group">
-                        <input type="text" name="subcategory_Name" defaultValue={subcategory_Name} placeholder="Subcategory Name" className="input input-bordered w-full" required/>
-                    </label>
+                        <input type="text" name="subcategory_Name" disabled defaultValue={subcategory_Name} placeholder="Subcategory Name" className="input input-bordered w-full" required/>
+                    </label> */}
+
+            <label className="label">
+              <span className="label-text font-semibold">Subcategory Name</span>
+            </label>
+            <label className="input-group">
+              <select
+                name="subcategory_Name"
+                id="subcategory_Name"
+                className="select select-bordered w-full "
+                defaultValue={subcategory_Name}
+                required
+              >
+                <option disabled   selected>
+                Select a subcategory
+                </option>
+                <option>Landscape Painting</option>
+                <option>Portrait Drawing</option>
+                <option>Watercolour Painting</option>
+                <option>Oil Painting</option>
+                <option>Charcoal Sketching</option>
+                <option>Cartoon Drawing</option>
+              </select>
+            </label>
 
                 </div>
             </div>
@@ -127,9 +150,26 @@ const MyCardUpdate = () => {
                     <label className="label">
                         <span className="label-text">Customization</span>
                     </label>
-                    <label className="input-group">
+                    {/* <label className="input-group">
                         <input type="text" name="customization" defaultValue={customization} placeholder="Customization" className="input input-bordered w-full" required/>
-                    </label>
+                    </label> */}
+
+<label className="input-group">
+              <select
+                name="customization"
+                id="customization"
+                className="select select-bordered w-full "
+                defaultValue={customization}
+                required
+              >
+                <option disabled selected>
+                Select a customization
+                </option>
+                <option>Yes</option>
+                <option>No</option>
+                
+              </select>
+            </label>
 
                 </div>
             </div>
