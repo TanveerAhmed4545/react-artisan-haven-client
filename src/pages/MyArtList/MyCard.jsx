@@ -1,4 +1,6 @@
 
+import { BsCurrencyDollar } from "react-icons/bs";
+import { MdOutlineStarBorderPurple500 } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -62,17 +64,17 @@ const MyCard = ({ myCard ,setMyData,myData }) => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">{item_name}</h2>
-        <p>
-          <span>Price :</span> {price}
+        <p className="flex  items-center gap-3">
+          <span className="font-medium">Price :</span> {price} <BsCurrencyDollar className="text-[#59E5A8]"/>
+        </p>
+        <p className="flex  items-center gap-3">
+          <span className="font-medium">Rating :</span> {rating} <span className="text-[#59E5A8]"><MdOutlineStarBorderPurple500 /></span>
         </p>
         <p>
-          <span>Rating :</span> {rating}
+          <span className="font-medium">Customization :</span> {customization}
         </p>
         <p>
-          <span>Customization :</span> {customization}
-        </p>
-        <p>
-          <span>Stock Status :</span> {stockStatus}
+          <span className="font-medium">Stock Status :</span> {stockStatus}
         </p>
         <div className="card-actions ">
           <Link to={`/myCardUpdate/${_id}`}><button className="btn border-none text-white bg-[#59E5A8]">Update</button></Link>

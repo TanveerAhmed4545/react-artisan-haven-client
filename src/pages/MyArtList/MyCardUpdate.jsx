@@ -194,9 +194,25 @@ const MyCardUpdate = () => {
                     <label className="label">
                         <span className="label-text">Stock Status</span>
                     </label>
-                    <label className="input-group">
+                    {/* <label className="input-group">
                         <input type="text" name="stockStatus" defaultValue={stockStatus} placeholder="Stock Status" className="input input-bordered w-full" required/>
-                    </label>
+                    </label> */}
+                    <label className="input-group">
+              <select
+                name="stockStatus"
+                id="stockStatus"
+                className="select select-bordered w-full "
+                defaultValue={stockStatus}
+                required
+              >
+                <option disabled selected>
+                Select a StockStatus
+                </option>
+                <option>In stock</option>
+                <option>Made to Order</option>
+                
+              </select>
+            </label>
 
                 </div>
             </div>

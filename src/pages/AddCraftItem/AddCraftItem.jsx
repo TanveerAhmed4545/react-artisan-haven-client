@@ -227,7 +227,7 @@ const AddCraftItem = () => {
             <label className="label">
               <span className="label-text font-semibold">Stock Status</span>
             </label>
-            <label className="input-group">
+            {/* <label className="input-group">
               <input
                 type="text"
                 name="stockStatus"
@@ -235,6 +235,21 @@ const AddCraftItem = () => {
                 className="input input-bordered w-full"
                 required
               />
+            </label> */}
+             <label className="input-group">
+              <select
+                name="stockStatus"
+                id="stockStatus"
+                className="select select-bordered w-full "
+                required
+              >
+                <option disabled selected>
+                Select a StockStatus
+                </option>
+                <option>In stock</option>
+                <option>Made to Order</option>
+                
+              </select>
             </label>
           </div>
         </div>
