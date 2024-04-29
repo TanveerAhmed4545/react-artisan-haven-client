@@ -1,4 +1,5 @@
 
+import { Helmet } from "react-helmet-async";
 import { Link, useLoaderData} from "react-router-dom";
 
 
@@ -20,6 +21,9 @@ const AllArtItems = () => {
   //  }
     return (
         <div className="bg-[#E3F9ED]">
+          <Helmet>
+                <title>Artisan Haven || All Art Items</title>
+            </Helmet>
             <h2 className="text-center text-2xl md:text-5xl font-bold text-[#59E5A8] py-9">All Art Items</h2>
 
             <div className="py-5">

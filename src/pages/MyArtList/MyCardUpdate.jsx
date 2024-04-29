@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -64,6 +65,9 @@ const MyCardUpdate = () => {
 
     return (
         <div className="bg-[#E3F9ED] p-7 md:p-20">
+            <Helmet>
+                <title>Artisan Haven || My Card Update</title>
+            </Helmet>
         <h2 className="text-center text-2xl md:text-5xl font-bold text-[#59E5A8] ">Update Art Item</h2>
         <form onSubmit={handleUpdateItem}>
             {/* item and subcategory name */}

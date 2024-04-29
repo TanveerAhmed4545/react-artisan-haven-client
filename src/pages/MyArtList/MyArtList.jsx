@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import MyCard from "./MyCard";
+import { Helmet } from "react-helmet-async";
 
 
 const MyArtList = () => {
@@ -90,6 +91,9 @@ const MyArtList = () => {
 
     return (
         <div className="mx-5 md:mx-10 mb-5 mt-5 md:mt-10 ">
+            <Helmet>
+                <title>Artisan Haven || My Art List</title>
+            </Helmet>
             <h2 className="text-center text-2xl md:text-5xl text-[#59E5A8] font-bold  mb-5">My Art List</h2>
             <div className="pb-4 text-center">
             <details className="dropdown">

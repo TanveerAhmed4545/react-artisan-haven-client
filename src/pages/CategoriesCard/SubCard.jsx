@@ -1,3 +1,5 @@
+import { BsCurrencyDollar } from "react-icons/bs";
+import { MdOutlineStarBorderPurple500 } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 
@@ -13,10 +15,10 @@ const SubCard = ({allArt}) => {
     <h2 className="card-title">{item_name}</h2>
     <p>{short_description}</p>
     <div className="flex">
-    <p>Price : {price}</p>
-    <p>Rating : {rating}</p>
+    <p className="font-semibold flex items-center gap-2">Price : {price} <BsCurrencyDollar className="text-[#59E5A8]"/></p>
+    <p className="font-semibold flex items-center gap-2">Rating : {rating} <span className="text-[#59E5A8]"><MdOutlineStarBorderPurple500 /></span></p>
     </div>
-    <p className="">Subcategory Name : {subcategory_Name}</p>
+    <p className="font-semibold">Subcategory Name : {subcategory_Name}</p>
     <div >
     <Link to={`/viewDetails/${_id}`}><button className="btn  w-full text-white border-none bg-[#59e5a8]">View Details</button></Link>
     </div>

@@ -5,6 +5,7 @@ import MakeVision from "./MakeVision";
 import OurService from "./OurService";
 import ArtCategories from "./ArtCategories";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 
 const Home = () => {
@@ -23,6 +24,9 @@ const Home = () => {
 
     return (
         <div>
+             <Helmet>
+                <title>Artisan Haven || Home</title>
+            </Helmet>
             <Banner></Banner>
             <h2></h2>
             <div className="my-5 lg:my-10">

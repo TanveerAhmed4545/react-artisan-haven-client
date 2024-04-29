@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const AddCraftItem = () => {
   const { user } = useContext(AuthContext);
@@ -70,6 +71,9 @@ const AddCraftItem = () => {
 
   return (
     <div className="bg-[#E3F9ED] p-7 md:p-20">
+        <Helmet>
+                <title>Artisan Haven || Add Craft Items</title>
+            </Helmet>
       <h2 className="text-center text-2xl md:text-5xl font-bold text-[#59E5A8]">
         Add Art Item
       </h2>

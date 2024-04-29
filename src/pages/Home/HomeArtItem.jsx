@@ -17,10 +17,10 @@ const HomeArtItem = ({arts}) => {
   </div>
   <div className="mt-3">
     <h2 className="card-title hover:text-[#59E5A8]">{item_name}</h2>
-    <p className="flex items-center my-3"><span className="text-[#59E5A8] mr-2"><BsCurrencyDollar /></span> {price}</p>
+    <p className="flex items-center my-3 font-medium">Price :  {price} <span className="text-[#59E5A8] mr-2"><BsCurrencyDollar /></span></p>
     <div className="flex items-center justify-between">
-    <p className="flex items-center gap-2">Rating : {rating}<span className="text-[#59E5A8]"><MdOutlineStarBorderPurple500 /></span></p>
-    <p>Customizable : {customization}</p>
+    <p className="flex items-center gap-2 font-medium">Rating : {rating}<span className="text-[#59E5A8]"><MdOutlineStarBorderPurple500 /></span></p>
+    <p className="font-medium">Customizable : {customization}</p>
     </div>
     <p className="my-3 font-semibold hover:text-[#59E5A8]">{subcategory_Name}</p>
     

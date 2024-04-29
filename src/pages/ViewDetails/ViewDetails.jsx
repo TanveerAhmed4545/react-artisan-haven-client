@@ -1,5 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { BsCurrencyDollar } from "react-icons/bs";
+import { Helmet } from "react-helmet-async";
+import { MdOutlineStarBorderPurple500 } from "react-icons/md";
 
 
 const ViewDetails = () => {
@@ -11,6 +13,9 @@ const ViewDetails = () => {
 
     return (
         <div className="card    hover:shadow-xl hover:shadow-[#E3F9ED]   my-5 lg:my-10 mx-5">
+          <Helmet>
+                <title>Artisan Haven || View Details</title>
+            </Helmet>
             
   <div className="">
   <figure><img className="rounded-2xl lg:h-screen lg:w-full" src={image}/></figure>
@@ -22,7 +27,7 @@ const ViewDetails = () => {
     <p className="text-xl"><span className="font-semibold ">Stock Status :</span> <span className="text-blue-gray-600">{stockStatus}</span></p>
     
     <p className="text-xl"><span className="font-semibold ">Short Description : </span>  <span className="text-blue-gray-600">{short_description}</span></p>
-    <p className="text-xl"><span className="font-semibold ">Rating : </span> <span className="text-blue-gray-600">{rating}</span> <span className="text-blue-gray-600">Star</span></p>
+    <p className="text-xl flex items-center gap-2"><span className="font-semibold ">Rating : </span> <span className="text-blue-gray-600">{rating}</span> <span className="text-[#59E5A8]"><MdOutlineStarBorderPurple500 /></span></p>
     <p className="text-xl"><span className="font-semibold ">Customization : </span> <span className="text-blue-gray-600">{customization}</span> </p>
     <p className="text-xl"><span className="font-semibold ">Processing Time : </span> <span className="text-blue-gray-600">{processing_time}</span> </p>
     
