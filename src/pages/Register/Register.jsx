@@ -6,6 +6,9 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
+import Lottie from "lottie-react";
+import signUpAnimation from '../../assets/signUpAnimation.json';
+
 
 
 const Register = () => {
@@ -62,11 +65,13 @@ const Register = () => {
     return (
         <div className="hero min-h-screen bg-[#E3F9ED]">
   <div className="hero-content flex-col lg:flex-row-reverse">
-    <div className="text-center lg:text-left">
-      <h1 className="text-5xl font-bold">Register Now</h1>
-      
+    <div className="text-center lg:text-left lg:ml-10">
+      <h1 className="text-5xl font-bold mb-6 lg:mb-8">Register Now</h1>
+      <div className=" max-w-[600px] md:max-w-md lg:max-w-[600px]">
+        <Lottie className="w-full" animationData={signUpAnimation} loop={true} />
+      </div>
     </div>
-    <div className="card rounded-tr-none rounded-bl-none shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+    <div className="card rounded-tr-none rounded-bl-none shrink-0 w-full max-w-md shadow-2xl bg-base-100">
       <form className="card-body pb-0" onSubmit={handleSubmit(onSubmit)}>
         <div className="form-control">
           <label className="label">

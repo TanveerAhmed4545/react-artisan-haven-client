@@ -5,6 +5,8 @@ import { IoMdEye } from "react-icons/io";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { toast } from "react-toastify";
+import Lottie from "lottie-react";
+import signInAnimation from '../../assets/signInAnimation.json';
 
 
 const Login = () => {
@@ -60,11 +62,14 @@ const Login = () => {
     return (
         <div className="hero min-h-screen bg-[#E3F9ED]">
   <div className="hero-content flex-col lg:flex-row-reverse">
-    <div className="text-center lg:text-left">
-      <h1 className="text-5xl font-bold">Login Now</h1>
-      
+    <div className="text-center lg:text-left ml-0 lg:ml-10">
+      <h1 className="text-5xl font-bold mb-5">Login Now</h1>
+      <div className=" max-w-[500px] md:max-w-md lg:max-w-[570px]  ">
+    <Lottie className="w-full" animationData={signInAnimation} loop={true} />
+  </div>
+
     </div>
-    <div className="card rounded-tr-none rounded-bl-none shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+    <div className="card rounded-tr-none rounded-bl-none shrink-0 w-full max-w-md shadow-2xl bg-base-100">
       <form className="card-body pb-0" onSubmit={handleSubmit(onSubmit)}>
        
         
