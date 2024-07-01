@@ -2,17 +2,24 @@
 
 
 ## Live Server: https://react-artisan-haven-client.web.app/
- 
-- 📝 This is a Art and painting related website.
-- 📝 This website design create by myself.
+## Server Site: https://github.com/TanveerAhmed4545/react-artisan-haven-server
+
+
+## About
+Artisan Haven is an online platform dedicated to celebrating the intricate world of art and craft, primarily centred around the "Painting and Drawing" category. 
+
+
+ ##  Features
+- 📝 This is an Art and painting-related website.
+- 📝 This website design created by myself.
 - 📝 This website is built with React library and also React router.
-- 📝 This website is built with tailwind css library .
+- 📝 This website is built with a tailwind css library.
 - 📝 This website mainly has 4 pages. Home/ All Art Items / Add craft item / My Art and Craft List and also login and register.
-- 📝 The Home Page contain Navbar,Banner, Craft items section, Art Categories Section, 2 ExtraSections,and Footer.
-- 📝  Authentication functionality has included in this website.
-- 📝 And mongodb collection and data has been created by me and that data has been used for this Website.
+- 📝 The Home Page contains a Navbar, Banner, Craft items section, Art Categories Section, 2 ExtraSections, and Footer.
+- 📝  Authentication functionality is included in this website.
+- 📝 MongoDB collection and data have been created by me and that data has been used for this Website.
 - 📝 Also use daisyUi .
-- 📝 Selected category is Painting and Drawing .
+- 📝 Selected category is Painting and Drawing.
 
 ##  Packages
 
