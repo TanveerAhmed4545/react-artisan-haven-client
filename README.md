@@ -40,14 +40,24 @@ First, clone the repository to your local machine using the following command:
 git clone https://github.com/TanveerAhmed4545/react-artisan-haven-client.git
 ```
 #### Step 2: Navigate to the Project Directory
-### git clone https://github.com/TanveerAhmed4545/react-artisan-haven-client.git
-### cd YourRepositoryName
+Change into the project directory:
+```bash
+cd repository-name
+```
+#### Step 3: Prepare the Project
+Before installing dependencies, make sure to clean up any existing ones:
 
-#### Look at the files and folder of the project
-#### Delete node_modules folder and package-lock.json file if exists
+- Delete the node_modules folder, if it exists.
+- Delete the package-lock.json file, if it exists.
 
-#### Run the following commands
-### npm install # this will create node_modules folder and package-lock.json
-### npm start # It will start your React app
-
-### Now go to http://localhost:3000/ to visit your app
+#### Step 4: Install Dependencies  
+Install the required dependencies by running:
+```bash
+npm install
+```
+#### Step 5: Start the Application
+Run the following command to start the application:
+```bash
+npm start
+```
+Now, open your browser and go to http://localhost:3000/ to view your React app.
