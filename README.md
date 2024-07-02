@@ -34,8 +34,12 @@ React js, MongoDB, Express, Firebase, Tailwind CSS, DaisyUI, Lottie React
 
 ## Installation:
 
-#### Cloning this React project and running it locally
-
+#### Step 1: Clone the Repository
+First, clone the repository to your local machine using the following command:
+```bash
+git clone https://github.com/TanveerAhmed4545/react-artisan-haven-client.git
+```
+#### Step 2: Navigate to the Project Directory
 ### git clone https://github.com/TanveerAhmed4545/react-artisan-haven-client.git
 ### cd YourRepositoryName
 
