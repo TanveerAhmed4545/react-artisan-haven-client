@@ -31,4 +31,3 @@ React js, MongoDB, Express, Firebase, Tailwind CSS, DaisyUI, Lottie React
 - react-helmet
 - react-hook-form
 - react-toastify
-- 
