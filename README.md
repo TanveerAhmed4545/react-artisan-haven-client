@@ -34,16 +34,16 @@ React js, MongoDB, Express, Firebase, Tailwind CSS, DaisyUI, Lottie React
 
 ## Installation:
 
-# Cloning this React project and running it locally
+#### Cloning this React project and running it locally
 
-git clone https://github.com/TanveerAhmed4545/react-artisan-haven-client.git
-cd YourRepositoryName
+### git clone https://github.com/TanveerAhmed4545/react-artisan-haven-client.git
+### cd YourRepositoryName
 
-# Look at the files and folder of the project
-# Delete node_modules folder and package-lock.json file if exists
+#### Look at the files and folder of the project
+#### Delete node_modules folder and package-lock.json file if exists
 
-# Run the following commands
-npm install # this will create node_modules folder and package-lock.json
-npm start # It will start your React app
+#### Run the following commands
+### npm install # this will create node_modules folder and package-lock.json
+### npm start # It will start your React app
 
-# Now go to http://localhost:3000/ to visit your app
+### Now go to http://localhost:3000/ to visit your app
