@@ -7,13 +7,14 @@
 
 ## About
 Artisan Haven is an online platform dedicated to celebrating the intricate world of art and craft, primarily centred around the "Painting and Drawing" category. 
-
+## Technologies:
+React js, MongoDB, Express, Firebase, Tailwind CSS, DaisyUI, Lottie React
 
  ##  Features
 - 📝 This is an Art and painting-related website.
-- 📝 This website design created by myself.
+- 📝 This website design was created by myself.
 - 📝 This website is built with React library and also React router.
-- 📝 This website is built with a tailwind css library.
+- 📝 This website is built with a tailwind CSS library.
 - 📝 This website mainly has 4 pages. Home/ All Art Items / Add craft item / My Art and Craft List and also login and register.
 - 📝 The Home Page contains a Navbar, Banner, Craft items section, Art Categories Section, 2 ExtraSections, and Footer.
 - 📝  Authentication functionality is included in this website.
@@ -25,3 +26,9 @@ Artisan Haven is an online platform dedicated to celebrating the intricate world
 
 - Lottie React
 - React-tooltip
+- Aos
+- swiper
+- react-helmet
+- react-hook-form
+- react-toastify
+- 
